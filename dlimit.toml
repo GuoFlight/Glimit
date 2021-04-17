@@ -1,0 +1,9 @@
+whitelist = ["root","xiaoming",]     #白名单,白名单中的用户不会被限制
+port = 1216               #监听端口
+[cgroup]
+dir = "/sys/fs/cgroup"      #centos7
+#dir = "/cgroup"             #centos6
+[cpu]
+cfs_period_us = 100000  #总额
+cfs_quota_us = 60000    #可使用的额度
+
